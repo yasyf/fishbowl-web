@@ -10,7 +10,6 @@
 
     <title>FishBowl</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
@@ -33,19 +32,22 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<!--           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><h5>FISHBOWL</h5></a>
+          </button> -->
+          <a class="navbar-brand" id="test" href="#"><h5>FISHBOWL</h5></a>
         </div>
-        <div class="navbar-collapse collapse">
+<!--         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
           </ul>
         </div><!--/.nav-collapse -->
+
       </div>
     </div>
+					
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload=""></iframe>
 
 	<div id="headerwrap">
 		<div class="container">
@@ -53,15 +55,20 @@
 				<div class="col-lg-6">
 					<h1>Connect with everyone<br/>
 					around you.</h1>
-					<script type="text/javascript">var submitted=false;</script>
-   					 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='javascript:history.go(0)';}"></iframe>
 
-					<form class="form-inline" role="form" action="https://docs.google.com/forms/d/1-irAlzA4brD6KmKaa3hgv_NT1ttPNtfg_cCw3qV0cDw/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+   					 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+					<form class="form-inline" role="form" action="https://docs.google.com/forms/d/1-irAlzA4brD6KmKaa3hgv_NT1ttPNtfg_cCw3qV0cDw/formResponse" method="POST" id="ss-form" target="hidden_iframe" onclick="">
+
 					  <div class="form-group">
-					    <input type="text" name="entry.282458091" value="" id="entry_282458091" dir="auto" aria-label="AppleID  " title="" class="form-control" type = "text" placeholder="Enter your AppleID" onclick="">
+					    <input type="email" name="entry.282458091" value="" id="entry_282458091" dir="auto" aria-label="AppleID" title="" class="form-control" type = "text" placeholder="Enter your AppleID" onclick="" required>
 					  </div>
 					  <button  type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-warning btn-lg">Invite Me</button>
 					</form>					
+
+					<div id="confirm">
+					<h5> Thank you. You will be contacted shortly!</h5>
+					</div>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
@@ -70,7 +77,6 @@
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
-	
 	
 	<div class="container">
 		<div class="row mt centered">
@@ -97,7 +103,7 @@
 			<div class="col-lg-4">
 				<img src="assets/img/ser01.png" width="220" alt="">
 				<h4>Bluetooth Low Energy</h4>
-				<p>Our appliaction uses low energy Bluetooth to reduce strain on the battery.</p>
+				<p>Our application uses low energy Bluetooth to reduce strain on the battery.</p>
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
 		<hr>
@@ -169,7 +175,7 @@
 			<div class="col-lg-4">
 				<img class="img-circle" src="assets/img/pic3.png" width="140" alt="">
 				<h4>David Doan</h4>
-				<p>David is a huge mech nerd, completely obsessed with engineering and the ability to create with anything he can get his hands on.</p>
+				<p>David is a huge mech nerd, completely obsessed with engineering and the ability to create with anything he can get his hands on. He is currently studying Mechanical Engineering at MIT.</p>
 				<!-- <p><a class="glyphicon glyphicon-send" href="http://www.google.com"></a> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p> -->
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
@@ -177,7 +183,7 @@
 	</div><!-- /container -->
 	
 	<div class="container">
-		<p class="centered">Created with love by FishBowl - 2015.</p>
+		<p class="centered">Created with < 3 by FishBowl | 2015 </p>
 	</div><!-- /container -->
 	
 
@@ -186,5 +192,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/form.js"></script>
+
   </body>
 </html>
