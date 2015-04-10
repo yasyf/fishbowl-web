@@ -109,10 +109,18 @@ a:after {
 	margin-bottom: 40px;
 }
 
+.form-control1 {
+    height: 42px;
+    font-size: 18px;
+    width: 200px;
+    margin: 5px;
+}
+
 .form-control {
 	height: 42px;
 	font-size: 18px;
-	width: 280px;
+	width: 415px;
+    margin: 5px;
 }
 
 i {
